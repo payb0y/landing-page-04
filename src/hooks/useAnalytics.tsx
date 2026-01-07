@@ -116,15 +116,15 @@ export const useSectionVisibility = () => {
 // Get CTA text based on current section
 export const getCTAText = (section: string): { text: string; href: string } => {
   const ctaMap: Record<string, { text: string; href: string }> = {
-    hero: { text: "Start Free Trial", href: "#pricing" },
-    journey: { text: "See How It Works", href: "#features" },
-    features: { text: "View Pricing", href: "#pricing" },
-    "ui-previews": { text: "Try It Free", href: "#pricing" },
-    testimonials: { text: "Join Happy Doctors", href: "#pricing" },
-    faq: { text: "Get Started Now", href: "#pricing" },
-    pricing: { text: "Contact Sales", href: "#contact" },
+    hero: { text: "Commencer l'Essai Gratuit", href: "#contact" },
+    journey: { text: "Voir Comment Ça Marche", href: "#features" },
+    features: { text: "Nous Contacter", href: "#contact" },
+    "ui-previews": { text: "Essayer Gratuitement", href: "#contact" },
+    testimonials: { text: "Rejoindre Nos Clients", href: "#contact" },
+    faq: { text: "Commencer Maintenant", href: "#contact" },
+    pricing: { text: "Contacter le Service Commercial", href: "#contact" },
   };
-  return ctaMap[section] || { text: "Start Free Trial", href: "#pricing" };
+  return ctaMap[section] || { text: "Commencer l'Essai Gratuit", href: "#contact" };
 };
 
 // Intersection observer hook for animations

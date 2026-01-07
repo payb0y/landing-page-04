@@ -17,64 +17,64 @@ interface PricingPlan {
 const pricingPlans: PricingPlan[] = [
   {
     id: "solo",
-    name: "Solo Practice",
-    description: "Perfect for individual practitioners just getting started.",
+    name: "Cabinet Individuel",
+    description: "Idéal pour un kinésithérapeute indépendant.",
     monthlyPrice: 49,
     yearlyPrice: 39,
     features: [
-      "1 provider account",
-      "Unlimited patient records",
-      "Appointment scheduling",
-      "Basic billing & invoicing",
-      "Patient portal",
-      "SMS reminders (100/month)",
-      "Email support",
-      "Mobile app access",
+      "1 utilisateur",
+      "Dossiers patients illimités",
+      "Gestion des rendez-vous",
+      "Facturation de base",
+      "Portail patient",
+      "Rappels SMS (100/mois)",
+      "Support par email",
+      "Accès application mobile",
     ],
-    cta: "Start Free Trial",
+    cta: "Essai gratuit",
   },
   {
     id: "clinic",
-    name: "Clinic",
-    description: "For growing practices with multiple staff members.",
+    name: "Centre de Kinésithérapie",
+    description: "Pour les structures avec plusieurs praticiens.",
     monthlyPrice: 99,
     yearlyPrice: 79,
     popular: true,
-    highlight: "Most Popular",
+    highlight: "Plus Populaire",
     features: [
-      "Up to 5 provider accounts",
-      "Everything in Solo, plus:",
-      "AI documentation assistant",
-      "Multi-location support",
-      "Advanced analytics",
-      "Teleconsultation",
-      "SMS reminders (500/month)",
-      "Priority phone & chat support",
-      "Custom templates",
-      "Insurance claim management",
+      "Multi-utilisateurs",
+      "Tout du Cabinet Individuel, plus :",
+      "Gestion des salles et équipements",
+      "Tableaux de bord avancés",
+      "Suivi thérapeutique structuré",
+      "Gestion d'équipe",
+      "Rappels SMS (500/mois)",
+      "Support prioritaire",
+      "Modèles personnalisables",
+      "Export comptable",
     ],
-    cta: "Start Free Trial",
+    cta: "Essai gratuit",
   },
   {
     id: "enterprise",
-    name: "Enterprise",
-    description: "For hospitals and large healthcare organizations.",
+    name: "Réseau / Enterprise",
+    description: "Pour les groupes et réseaux médicaux.",
     monthlyPrice: 249,
     yearlyPrice: 199,
     features: [
-      "Unlimited providers",
-      "Everything in Clinic, plus:",
-      "Dedicated account manager",
-      "Custom integrations (API)",
-      "White-label option",
-      "On-premises deployment option",
-      "Advanced security controls",
-      "Unlimited SMS reminders",
-      "24/7 premium support",
-      "Training & onboarding included",
-      "SLA guarantee",
+      "Multi-centres",
+      "Tout du Centre de Kinésithérapie, plus :",
+      "Accès API",
+      "Personnalisation avancée",
+      "Accompagnement dédié",
+      "Intégrations personnalisées",
+      "Contrôles de sécurité avancés",
+      "Rappels SMS illimités",
+      "Support 24/7",
+      "Formation & accompagnement inclus",
+      "Garantie SLA",
     ],
-    cta: "Contact Sales",
+    cta: "Contacter l'équipe",
   },
 ];
 
@@ -128,14 +128,15 @@ export const Pricing = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-medium mb-4">
-            💰 Transparent Pricing
+            💰 Tarification Transparente
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Simple, <span className="gradient-text">Honest Pricing</span>
+            Des offres{" "}
+            <span className="gradient-text">adaptées à votre centre</span>
           </h2>
           <p className="text-lg text-slate-600">
-            No hidden fees. No surprises. Choose the plan that fits your
-            practice. All plans include a 14-day free trial.
+            Pas de frais cachés. Pas de surprises. Choisissez l'offre qui
+            correspond à la taille de votre centre.
           </p>
         </div>
 
@@ -146,7 +147,7 @@ export const Pricing = () => {
               !isYearly ? "text-slate-900" : "text-slate-500"
             }`}
           >
-            Monthly
+            Mensuel
           </span>
           <button
             onClick={() => {
@@ -166,9 +167,9 @@ export const Pricing = () => {
               isYearly ? "text-slate-900" : "text-slate-500"
             }`}
           >
-            Yearly
+            Annuel
             <span className="ml-2 px-2 py-0.5 bg-accent-100 text-accent-700 text-xs rounded-full">
-              Save 20%
+              Économisez 20%
             </span>
           </span>
         </div>

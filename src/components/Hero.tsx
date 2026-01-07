@@ -29,57 +29,51 @@ export const Hero = () => {
             }`}
           >
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse" />
-              Trusted by 10,000+ Healthcare Professionals
-            </div>
+              Déjà adopté par des centres de kinésithérapie
+            </div> */}
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Reclaim Time With Patients —{" "}
-              <span className="gradient-text">Let Tech Handle the Rest</span>
+              La plateforme intelligente pour{" "}
+              <span className="gradient-text">
+                gérer efficacement votre centre de kinésithérapie
+              </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0">
-              AI-powered practice management that automates paperwork,
-              streamlines scheduling, and lets you focus on what matters most —
-              your patients.
+              Optimisez vos rendez-vous, simplifiez la gestion des dossiers
+              patients et concentrez-vous sur l'essentiel : le soin et le suivi
+              de vos patients.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a
-                href="#pricing"
+                href="#contact"
                 className="btn-primary text-lg px-8 py-4"
                 onClick={() => trackEvent("hero_cta_primary")}
               >
-                Start Free Trial
+                Demander une démonstration
                 <Icons.ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="#testimonials"
-                className="btn-secondary text-lg px-8 py-4"
-                onClick={() => trackEvent("hero_cta_demo")}
-              >
-                <Icons.Play className="w-5 h-5" />
-                Watch Demo
               </a>
             </div>
 
             {/* Trust Indicators */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-slate-500">
               <span className="flex items-center gap-2">
-                <Icons.CheckCircle2 className="w-5 h-5 text-accent-500" />
-                No credit card required
+                <Icons.CheckCircle2 className="w-5 h-5 text-accent-500" />1 mois
+                d'essai gratuit
               </span>
               <span className="flex items-center gap-2">
                 <Icons.CheckCircle2 className="w-5 h-5 text-accent-500" />
-                14-day free trial
+                Formation incluse
               </span>
               <span className="flex items-center gap-2">
                 <Icons.CheckCircle2 className="w-5 h-5 text-accent-500" />
-                Cancel anytime
+                Support réactif
               </span>
             </div>
           </div>
@@ -97,7 +91,7 @@ export const Hero = () => {
               <div className="glass-card p-4 rounded-3xl shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop"
-                  alt="Medical Dashboard Interface"
+                  alt="Tableau de bord SMC"
                   className="w-full rounded-2xl"
                 />
                 {/* Floating Stats Cards */}
@@ -131,7 +125,7 @@ export const Hero = () => {
         </div>
 
         {/* Trusted By Logos */}
-        <div className="mt-16 pt-12 border-t border-slate-200/50">
+        {/* <div className="mt-16 pt-12 border-t border-slate-200/50">
           <p className="text-center text-sm text-slate-500 mb-8">
             Trusted by leading healthcare institutions worldwide
           </p>
@@ -148,7 +142,7 @@ export const Hero = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

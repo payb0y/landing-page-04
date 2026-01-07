@@ -19,117 +19,64 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Dr. Sarah Okonkwo",
-    role: "Pediatric Surgeon",
-    specialty: "Pediatrics",
-    location: "Lagos, Nigeria",
+    name: "Claire Moreau",
+    role: "Kinésithérapeute",
+    specialty: "Kinésithérapie du sport",
+    location: "Paris, France",
     image:
       "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face",
-    quote: "MediCarePro transformed my practice completely.",
+    quote: "SMC a transformé la gestion de mon cabinet.",
     fullQuote:
-      "Before MediCarePro, I was drowning in paperwork. Now I spend my evenings with my family instead of catching up on documentation. The AI-assisted notes feature alone saves me 2 hours every day. My patient satisfaction scores have never been higher.",
+      "Avant SMC, je passais des heures à gérer les rendez-vous et la facturation. Maintenant, tout est automatisé et je peux me concentrer sur mes patients. Les rappels automatiques ont réduit les absences de 40%.",
     rating: 5,
     videoUrl: "#",
     metrics: [
-      { value: "2 hrs", label: "saved daily" },
-      { value: "40%", label: "more patients" },
+      { value: "40%", label: "d'absences en moins" },
+      { value: "2h", label: "économisées par jour" },
     ],
   },
   {
     id: "2",
-    name: "Dr. Ahmed Benali",
-    role: "Cardiologist",
-    specialty: "Cardiology",
-    location: "Casablanca, Morocco",
+    name: "Marc Dubois",
+    role: "Kinésithérapeute",
+    specialty: "Rééducation",
+    location: "Lyon, France",
     image:
       "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop&crop=face",
-    quote: "The best investment I've made for my clinic.",
+    quote: "Le meilleur investissement pour mon centre.",
     fullQuote:
-      "As a cardiologist, I need to track complex patient data over time. MediCarePro's patient timeline and the integration with my diagnostic equipment is seamless. The automated reminders cut our no-show rate from 25% to just 8%.",
+      "La gestion des dossiers patients est devenue tellement plus simple. Le suivi thérapeutique structuré me permet de voir la progression de chaque patient en un coup d'œil. Mes patients apprécient le professionnalisme.",
     rating: 5,
     metrics: [
-      { value: "17%", label: "fewer no-shows" },
-      { value: "60%", label: "faster billing" },
+      { value: "65%", label: "de temps admin en moins" },
+      { value: "60%", label: "facturation plus rapide" },
     ],
   },
   {
     id: "3",
-    name: "Dr. Fatima El Mansouri",
-    role: "Dermatologist",
-    specialty: "Dermatology",
-    location: "Rabat, Morocco",
+    name: "Sophie Martin",
+    role: "Directrice de centre",
+    specialty: "Gestion",
+    location: "Marseille, France",
     image:
       "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop&crop=face",
-    quote: "Finally, software that understands dermatology.",
+    quote: "Enfin une solution pensée pour la kinésithérapie.",
     fullQuote:
-      "The clinical photo management feature is a game-changer for my dermatology practice. I can track skin conditions over time with before/after comparisons, and patients love seeing their progress. The teleconsultation feature helped me expand to rural areas.",
+      "Avec 5 kinésithérapeutes dans notre centre, la coordination était complexe. SMC nous permet de gérer tous les plannings, les salles et les équipements facilement. Les tableaux de bord nous aident à optimiser notre activité.",
     rating: 5,
     videoUrl: "#",
     metrics: [
-      { value: "3x", label: "patient reach" },
-      { value: "98%", label: "satisfaction" },
-    ],
-  },
-  {
-    id: "4",
-    name: "Dr. Jean-Pierre Dubois",
-    role: "Physiotherapist",
-    specialty: "Physical Therapy",
-    location: "Nancy, France",
-    image:
-      "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop&crop=face",
-    quote: "Session tracking has never been easier.",
-    fullQuote:
-      "Managing multiple treatment plans used to be a nightmare. Now I can track each patient's progress, schedule follow-ups automatically, and even share exercise videos through the patient portal. My administrative time dropped by 65%.",
-    rating: 5,
-    metrics: [
-      { value: "65%", label: "less admin" },
-      { value: "25%", label: "more sessions" },
-    ],
-  },
-  {
-    id: "5",
-    name: "Dr. Amina Diallo",
-    role: "General Practitioner",
-    specialty: "General Medicine",
-    location: "Dakar, Senegal",
-    image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=200&h=200&fit=crop&crop=face",
-    quote: "My entire staff loves it.",
-    fullQuote:
-      "The multi-user feature lets my nurses and receptionist work together seamlessly. Everyone knows exactly what's happening with each patient. The training was quick — my team was productive within a day.",
-    rating: 5,
-    metrics: [
-      { value: "1 day", label: "to onboard" },
-      { value: "100%", label: "team adoption" },
-    ],
-  },
-  {
-    id: "6",
-    name: "Dr. Youssef Haddad",
-    role: "Gynecologist",
-    specialty: "Gynecology",
-    location: "Tunis, Tunisia",
-    image:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop&crop=face",
-    quote: "Perfect for complex patient journeys.",
-    fullQuote:
-      "Pregnancy follow-ups require detailed tracking across many visits. MediCarePro's timeline view and automated reminders ensure no patient falls through the cracks. The mobile app lets me check on urgent cases even when I'm away.",
-    rating: 5,
-    videoUrl: "#",
-    metrics: [
-      { value: "0", label: "missed follow-ups" },
-      { value: "35%", label: "time saved" },
+      { value: "5", label: "praticiens" },
+      { value: "98%", label: "de satisfaction" },
     ],
   },
 ];
 
 const trustBadges = [
-  { name: "HIPAA Compliant", icon: "🔒" },
-  { name: "GDPR Ready", icon: "🇪🇺" },
-  { name: "SOC 2 Certified", icon: "✓" },
-  { name: "ISO 27001", icon: "🏆" },
-  { name: "CNDP Approved", icon: "✓" },
+  { name: "Données sécurisées", icon: "🔒" },
+  { name: "Conforme RGPD", icon: "🇪🇺" },
+  { name: "Sauvegardes auto", icon: "✓" },
+  { name: "Hébergement sécurisé", icon: "🏆" },
 ];
 
 export const Testimonials = () => {
@@ -152,14 +99,15 @@ export const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-warm-100 text-warm-700 rounded-full text-sm font-medium mb-4">
-            ⭐ Customer Stories
+            ⭐ Témoignages Clients
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Trusted by <span className="gradient-text">10,000+ Doctors</span>
+            Déjà adopté par{" "}
+            <span className="gradient-text">des centres de kinésithérapie</span>
           </h2>
           <p className="text-lg text-slate-600">
-            Real stories from healthcare professionals who transformed their
-            practice with MediCarePro.
+            Des histoires réelles de professionnels de santé qui ont transformé
+            leur pratique avec SMC.
           </p>
         </div>
 

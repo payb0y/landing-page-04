@@ -7,7 +7,6 @@ import { Features } from "./components/Features";
 import { UIPreviews } from "./components/UIPreviews";
 import { Testimonials } from "./components/Testimonials";
 import { FAQ } from "./components/FAQ";
-import { Pricing } from "./components/Pricing";
 import { FinalCTA } from "./components/FinalCTA";
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
           <UIPreviews />
           <Testimonials />
           <FAQ />
-          <Pricing />
+          {/* <Pricing /> */}
           <FinalCTA />
         </main>
         <Footer />

@@ -10,57 +10,70 @@ interface UIPreview {
 
 const uiPreviews: UIPreview[] = [
   {
-    title: "Intuitive Dashboard",
+    title: "Tableau de Bord Intuitif",
     caption:
-      "Get a complete overview of your day at a glance. See upcoming appointments, patient alerts, and practice metrics all in one place.",
+      "Vue complète de votre journée en un coup d'œil. Rendez-vous à venir, alertes patients et indicateurs d'activité, tout au même endroit.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
     features: [
-      "Daily schedule overview",
-      "Patient waiting list",
-      "Revenue snapshot",
-      "Task reminders",
+      "Planning de la journée",
+      "Liste d'attente patients",
+      "Aperçu du chiffre d'affaires",
+      "Rappels de tâches",
     ],
   },
   {
-    title: "Patient Records Made Simple",
+    title: "Dossiers Patients Simplifiés",
     caption:
-      "Everything about your patient in one comprehensive view. Medical history, documents, prescriptions, and billing — all connected.",
+      "Toutes les informations de vos patients dans une vue complète. Historique médical, documents, ordonnances et facturation — tout est connecté.",
     image:
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=500&fit=crop",
     reverse: true,
     features: [
-      "Complete medical timeline",
-      "Document attachments",
-      "Prescription history",
-      "Visit notes",
+      "Chronologie médicale complète",
+      "Documents joints",
+      "Historique des séances",
+      "Notes de visite",
     ],
   },
   {
-    title: "Smart Scheduling Calendar",
+    title: "Calendrier de Planification Intelligent",
     caption:
-      "A calendar that works as hard as you do. Color-coded appointments, drag-and-drop rescheduling, and intelligent conflict detection.",
+      "Un calendrier qui travaille aussi dur que vous. Rendez-vous codés par couleur, reprogrammation par glisser-déposer et détection intelligente des conflits.",
     image:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
     features: [
-      "Multi-provider view",
-      "Drag & drop booking",
-      "Automated reminders",
-      "Waitlist management",
+      "Vue multi-praticiens",
+      "Réservation par glisser-déposer",
+      "Rappels automatiques",
+      "Gestion liste d'attente",
     ],
   },
   {
-    title: "Billing & Financial Reports",
+    title: "Facturation & Rapports Financiers",
     caption:
-      "Track every payment, manage invoices, and get real-time insights into your practice's financial health.",
+      "Suivez chaque paiement, gérez les factures et obtenez des informations en temps réel sur la santé financière de votre centre.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
     reverse: true,
     features: [
-      "Automated invoicing",
-      "Payment tracking",
-      "Insurance claims",
-      "Financial reports",
+      "Facturation automatisée",
+      "Suivi des paiements",
+      "Gestion des impayés",
+      "Rapports financiers",
+    ],
+  },
+  {
+    title: "Application Web 100 % Responsive",
+    caption:
+      "SMC est accessible partout, à tout moment. Sur PC, tablette et mobile avec une interface moderne et intuitive optimisée pour le travail en cabinet.",
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
+    features: [
+      "PC, tablette et mobile",
+      "Interface moderne et intuitive",
+      "Accès rapide aux dossiers patients",
+      "Gestion des rendez-vous en déplacement",
     ],
   },
 ];
@@ -74,14 +87,15 @@ export const UIPreviews = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
-            Product Preview
+            Aperçu du Produit
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            See It in <span className="gradient-text">Action</span>
+            Voyez-le en <span className="gradient-text">Action</span>
           </h2>
           <p className="text-lg text-slate-600">
-            Designed by doctors, for doctors. Every screen is optimized for
-            speed, clarity, and ease of use.
+            Conçu par des professionnels de santé, pour des professionnels de
+            santé. Chaque écran est optimisé pour la rapidité, la clarté et la
+            facilité d'utilisation.
           </p>
         </div>
 
@@ -136,7 +150,7 @@ export const UIPreviews = () => {
         </div>
 
         {/* Mobile App Preview */}
-        <div className="mt-24 bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
+        {/* <div className="mt-24 bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium mb-4">
@@ -191,7 +205,7 @@ export const UIPreviews = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

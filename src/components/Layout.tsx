@@ -14,10 +14,10 @@ export const Header = () => {
   const isScrolled = scrollPosition > 50;
 
   const navLinks = [
-    { label: "Features", href: "#features" },
-    { label: "How It Works", href: "#journey" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Fonctionnalités", href: "#features" },
+    { label: "Comment ça marche", href: "#journey" },
+    { label: "Témoignages", href: "#testimonials" },
+    { label: "Tarifs", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -46,7 +46,7 @@ export const Header = () => {
             <span
               className={`${isScrolled ? "text-slate-900" : "text-slate-900"}`}
             >
-              Medi<span className="text-primary-600">Care</span>Pro
+              <span className="text-primary-600">SMC</span>
             </span>
           </a>
 
@@ -76,11 +76,11 @@ export const Header = () => {
               Contact
             </a>
             <a
-              href="#pricing"
+              href="#contact"
               className="btn-primary"
               onClick={() => trackEvent("header_cta_click")}
             >
-              Start Free Trial
+              Demander une démo
             </a>
           </div>
 
@@ -118,8 +118,8 @@ export const Header = () => {
                 >
                   Contact
                 </a>
-                <a href="#pricing" className="btn-primary w-full text-center">
-                  Start Free Trial
+                <a href="#contact" className="btn-primary w-full text-center">
+                  Demander une démo
                 </a>
               </div>
             </div>
@@ -164,28 +164,28 @@ export const Footer = () => {
 
   const footerLinks = {
     product: [
-      { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "Integrations", href: "#" },
-      { label: "Updates", href: "#" },
+      { label: "Fonctionnalités", href: "#features" },
+      { label: "Tarifs", href: "#pricing" },
+      { label: "Intégrations", href: "#" },
+      { label: "Mises à jour", href: "#" },
     ],
     company: [
-      { label: "About Us", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Press", href: "#" },
+      { label: "À propos", href: "#" },
+      { label: "Carrières", href: "#" },
+      { label: "Presse", href: "#" },
       { label: "Blog", href: "#" },
     ],
     support: [
-      { label: "Help Center", href: "#" },
+      { label: "Centre d'aide", href: "#" },
       { label: "Documentation", href: "#" },
-      { label: "Training", href: "#" },
+      { label: "Formation", href: "#" },
       { label: "Contact", href: "#contact" },
     ],
     legal: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "HIPAA Compliance", href: "#" },
-      { label: "Data Security", href: "#" },
+      { label: "Confidentialité", href: "#" },
+      { label: "Conditions", href: "#" },
+      { label: "Conformité RGPD", href: "#" },
+      { label: "Sécurité des données", href: "#" },
     ],
   };
 
@@ -203,12 +203,12 @@ export const Footer = () => {
                 <Icons.Stethoscope className="w-6 h-6 text-white" />
               </div>
               <span>
-                Medi<span className="text-primary-400">Care</span>Pro
+                <span className="text-primary-400">SMC</span>
               </span>
             </a>
             <p className="text-slate-400 mb-6 max-w-xs">
-              Empowering healthcare professionals with smart practice management
-              solutions since 2018.
+              La plateforme intelligente pour gérer efficacement votre centre de
+              kinésithérapie depuis 2020.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -252,7 +252,7 @@ export const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Product</h4>
+            <h4 className="font-semibold mb-4 text-white">Produit</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -271,7 +271,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-white">Company</h4>
+            <h4 className="font-semibold mb-4 text-white">Entreprise</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -303,7 +303,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-white">Legal</h4>
+            <h4 className="font-semibold mb-4 text-white">Légal</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
@@ -322,20 +322,20 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-sm">
-            © 2026 MediCarePro. All rights reserved.
+            © 2026 SMC - Smart Medical Centers. Tous droits réservés.
           </p>
           <div className="flex items-center gap-6 text-sm text-slate-400">
             <span className="flex items-center gap-2">
               <Icons.Shield className="w-4 h-4 text-accent-400" />
-              HIPAA Compliant
+              Données sécurisées
             </span>
             <span className="flex items-center gap-2">
               <Icons.Shield className="w-4 h-4 text-accent-400" />
-              GDPR Ready
+              Conforme RGPD
             </span>
             <span className="flex items-center gap-2">
               <Icons.Shield className="w-4 h-4 text-accent-400" />
-              SOC 2 Certified
+              Hébergement sécurisé
             </span>
           </div>
         </div>

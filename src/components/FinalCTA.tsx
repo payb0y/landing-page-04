@@ -6,37 +6,37 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const contactSchema = z.object({
-  firstName: z.string().min(2, "First name is required"),
-  lastName: z.string().min(2, "Last name is required"),
-  email: z.string().email("Please enter a valid email"),
+  firstName: z.string().min(2, "Le prénom est requis"),
+  lastName: z.string().min(2, "Le nom est requis"),
+  email: z.string().email("Veuillez entrer un email valide"),
   phone: z.string().optional(),
-  practiceName: z.string().min(2, "Practice name is required"),
-  practiceSize: z.string().min(1, "Please select practice size"),
-  specialty: z.string().min(1, "Please select your specialty"),
+  practiceName: z.string().min(2, "Le nom du centre est requis"),
+  practiceSize: z.string().min(1, "Veuillez sélectionner la taille"),
+  specialty: z.string().min(1, "Veuillez sélectionner votre spécialité"),
   message: z.string().optional(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const specialties = [
-  "General Practice",
-  "Cardiology",
-  "Dermatology",
-  "Pediatrics",
-  "Gynecology",
-  "Orthopedics",
-  "Psychiatry",
-  "Dentistry",
-  "Physiotherapy",
-  "Other",
+  "Kinésithérapie générale",
+  "Kinésithérapie du sport",
+  "Rééducation",
+  "Pédiatrie",
+  "Gériatrie",
+  "Orthopédie",
+  "Neurologie",
+  "Respiratoire",
+  "Périnéologie",
+  "Autre",
 ];
 
 const practiceSizes = [
-  "Solo Practice (1 provider)",
-  "Small Clinic (2-5 providers)",
-  "Medium Clinic (6-15 providers)",
-  "Large Practice (16-50 providers)",
-  "Hospital/Enterprise (50+ providers)",
+  "Cabinet individuel (1 praticien)",
+  "Petit centre (2-5 praticiens)",
+  "Centre moyen (6-15 praticiens)",
+  "Grand centre (16-50 praticiens)",
+  "Réseau / Enterprise (50+ praticiens)",
 ];
 
 export const FinalCTA = () => {
@@ -87,21 +87,21 @@ export const FinalCTA = () => {
             }`}
           >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Transform Your Practice?
+              Prêt à transformer la gestion de votre centre ?
             </h2>
             <p className="text-lg text-primary-100 mb-8">
-              Join thousands of healthcare professionals who've reclaimed their
-              time and improved patient care with MediCarePro. Start your free
-              trial today — no credit card required.
+              Rejoignez les professionnels de santé qui ont déjà modernisé leur
+              pratique avec SMC – Smart Medical Centers. Essai gratuit sans
+              carte bancaire.
             </p>
 
             {/* Benefits */}
             <div className="space-y-4 mb-8">
               {[
-                "Set up in less than 24 hours",
-                "Free data migration from your current system",
-                "Personalized onboarding and training",
-                "Dedicated support throughout your journey",
+                "Mise en place rapide",
+                "Formation incluse",
+                "Accompagnement personnalisé",
+                "Support réactif",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-3">
                   <Icons.CheckCircle2 className="w-6 h-6 text-accent-400" />
@@ -112,21 +112,23 @@ export const FinalCTA = () => {
 
             {/* Contact Info */}
             <div className="space-y-4 pt-8 border-t border-white/10">
-              <p className="text-primary-200 text-sm">Or reach us directly:</p>
+              <p className="text-primary-200 text-sm">
+                Ou contactez-nous directement :
+              </p>
               <div className="flex flex-wrap gap-6">
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+33762189273"
                   className="flex items-center gap-2 text-white hover:text-accent-300 transition-colors"
                 >
                   <Icons.Phone className="w-5 h-5" />
-                  +1 (234) 567-890
+                  07 62 18 92 73
                 </a>
                 <a
-                  href="mailto:hello@medicarepro.com"
+                  href="mailto:smartmedicenters@gmail.com"
                   className="flex items-center gap-2 text-white hover:text-accent-300 transition-colors"
                 >
                   <Icons.Mail className="w-5 h-5" />
-                  hello@medicarepro.com
+                  smartmedicenters@gmail.com
                 </a>
               </div>
             </div>
@@ -146,26 +148,27 @@ export const FinalCTA = () => {
                   <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Icons.CheckCircle2 className="w-8 h-8 text-accent-600" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Thank You!</h3>
+                  <h3 className="text-2xl font-bold mb-4">Merci !</h3>
                   <p className="text-slate-600 mb-6">
-                    We've received your request. One of our team members will
-                    contact you within 24 hours to schedule your personalized
-                    demo.
+                    Nous avons bien reçu votre demande. Un membre de notre
+                    équipe vous contactera dans les 24 heures pour planifier
+                    votre démonstration personnalisée.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
                     className="text-primary-600 font-semibold hover:underline"
                   >
-                    Submit another request
+                    Soumettre une autre demande
                   </button>
                 </div>
               ) : (
                 <>
                   <h3 className="text-2xl font-bold mb-2">
-                    Request a Free Demo
+                    Demander une démonstration gratuite
                   </h3>
                   <p className="text-slate-500 mb-6">
-                    Fill out the form and we'll get back to you within 24 hours.
+                    Remplissez le formulaire et nous vous recontacterons dans
+                    les 24 heures.
                   </p>
 
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -173,7 +176,7 @@ export const FinalCTA = () => {
                       <div>
                         <input
                           {...register("firstName")}
-                          placeholder="First Name *"
+                          placeholder="Prénom *"
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                         />
                         {errors.firstName && (
@@ -185,7 +188,7 @@ export const FinalCTA = () => {
                       <div>
                         <input
                           {...register("lastName")}
-                          placeholder="Last Name *"
+                          placeholder="Nom *"
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                         />
                         {errors.lastName && (
@@ -200,7 +203,7 @@ export const FinalCTA = () => {
                       <input
                         {...register("email")}
                         type="email"
-                        placeholder="Work Email *"
+                        placeholder="Email professionnel *"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                       />
                       {errors.email && (
@@ -214,7 +217,7 @@ export const FinalCTA = () => {
                       <input
                         {...register("phone")}
                         type="tel"
-                        placeholder="Phone Number"
+                        placeholder="Téléphone"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                       />
                     </div>
@@ -222,7 +225,7 @@ export const FinalCTA = () => {
                     <div>
                       <input
                         {...register("practiceName")}
-                        placeholder="Practice/Clinic Name *"
+                        placeholder="Nom du centre / cabinet *"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
                       />
                       {errors.practiceName && (
@@ -238,7 +241,9 @@ export const FinalCTA = () => {
                           {...register("specialty")}
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-slate-700"
                         >
-                          <option value="">Select Specialty *</option>
+                          <option value="">
+                            Sélectionnez une spécialité *
+                          </option>
                           {specialties.map((specialty) => (
                             <option key={specialty} value={specialty}>
                               {specialty}
@@ -256,7 +261,7 @@ export const FinalCTA = () => {
                           {...register("practiceSize")}
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-slate-700"
                         >
-                          <option value="">Practice Size *</option>
+                          <option value="">Taille du centre *</option>
                           {practiceSizes.map((size) => (
                             <option key={size} value={size}>
                               {size}
@@ -274,7 +279,7 @@ export const FinalCTA = () => {
                     <div>
                       <textarea
                         {...register("message")}
-                        placeholder="Tell us about your needs (optional)"
+                        placeholder="Parlez-nous de vos besoins (optionnel)"
                         rows={3}
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none"
                       />
@@ -306,21 +311,21 @@ export const FinalCTA = () => {
                               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                             />
                           </svg>
-                          Sending...
+                          Envoi en cours...
                         </span>
                       ) : (
-                        "Request Free Demo"
+                        "Demander une démonstration gratuite"
                       )}
                     </button>
 
                     <p className="text-xs text-slate-500 text-center">
-                      By submitting, you agree to our{" "}
+                      En soumettant, vous acceptez notre{" "}
                       <a href="#" className="text-primary-600 hover:underline">
-                        Privacy Policy
+                        Politique de confidentialité
                       </a>{" "}
-                      and{" "}
+                      et nos{" "}
                       <a href="#" className="text-primary-600 hover:underline">
-                        Terms of Service
+                        Conditions d'utilisation
                       </a>
                       .
                     </p>

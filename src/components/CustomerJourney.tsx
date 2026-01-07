@@ -12,39 +12,39 @@ interface JourneyStep {
 
 const journeySteps: JourneyStep[] = [
   {
-    phase: "The Problem",
-    title: "Drowning in Paperwork",
+    phase: "Le Problème",
+    title: "Submergé par l'administratif",
     description:
-      "Healthcare professionals spend up to 50% of their time on administrative tasks — scheduling, billing, documentation, and follow-ups. This means less time for patient care and more burnout.",
+      "Les kinésithérapeutes passent jusqu'à 40% de leur temps sur des tâches administratives — planification, facturation, documentation et suivis. Moins de temps pour les soins et plus de risque d'épuisement.",
     icon: <Icons.FileText className="w-8 h-8" />,
     color: "bg-red-100 text-red-600",
-    stats: { value: "50%", label: "time lost to admin tasks" },
+    stats: { value: "40%", label: "temps perdu en admin" },
   },
   {
-    phase: "The Solution",
-    title: "AI-Powered Automation",
+    phase: "La Solution",
+    title: "Automatisation Intelligente",
     description:
-      "MediCarePro automates your entire practice workflow. From AI-assisted documentation to smart scheduling, we handle the busywork so you can focus on what you trained for — healing patients.",
+      "SMC automatise l'ensemble de votre flux de travail. De la gestion des rendez-vous à la facturation intelligente, nous gérons les tâches répétitives pour que vous puissiez vous concentrer sur vos patients.",
     icon: <Icons.Stethoscope className="w-8 h-8" />,
     color: "bg-primary-100 text-primary-600",
-    stats: { value: "1 Click", label: "to complete documentation" },
+    stats: { value: "1 Clic", label: "pour générer une facture" },
   },
   {
-    phase: "Real Results",
-    title: "Transform Your Practice",
+    phase: "Résultats Réels",
+    title: "Transformez votre Centre",
     description:
-      "Our customers report dramatic improvements in efficiency, patient satisfaction, and work-life balance. See the numbers that speak for themselves.",
+      "Nos clients constatent des améliorations spectaculaires en termes d'efficacité, de satisfaction des patients et d'équilibre vie professionnelle-vie personnelle.",
     icon: <Icons.Heart className="w-8 h-8" />,
     color: "bg-accent-100 text-accent-600",
-    stats: { value: "40%", label: "more time with patients" },
+    stats: { value: "40%", label: "de temps en plus avec les patients" },
   },
 ];
 
 const impactStats = [
-  { value: "2.5", suffix: "hrs", label: "Average time saved per day" },
-  { value: "35", suffix: "%", label: "Reduction in no-shows" },
-  { value: "98", suffix: "%", label: "Patient satisfaction rate" },
-  { value: "60", suffix: "%", label: "Faster billing cycles" },
+  { value: "2.5", suffix: "h", label: "Temps économisé par jour en moyenne" },
+  { value: "40", suffix: "%", label: "Réduction des absences" },
+  { value: "98", suffix: "%", label: "Taux de satisfaction patients" },
+  { value: "60", suffix: "%", label: "Cycles de facturation plus rapides" },
 ];
 
 export const CustomerJourney = () => {
@@ -56,15 +56,15 @@ export const CustomerJourney = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
-            Your Journey
+            Votre Parcours
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            From Overwhelmed to{" "}
-            <span className="gradient-text">In Control</span>
+            De Débordé à{" "}
+            <span className="gradient-text">Maître de Votre Temps</span>
           </h2>
           <p className="text-lg text-slate-600">
-            See how MediCarePro transforms the daily challenges of practice
-            management into streamlined, automated workflows.
+            Découvrez comment SMC transforme les défis quotidiens de la gestion
+            en flux de travail automatisés et simplifiés.
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export const CustomerJourney = () => {
         {/* Impact Stats */}
         <div className="mt-20 bg-gradient-to-br from-primary-600 to-primary-800 rounded-3xl p-8 md:p-12">
           <h3 className="text-2xl font-bold text-white text-center mb-10">
-            The Numbers Don't Lie — Here's What Our Users Experience
+            Les Chiffres Parlent d'Eux-Mêmes — Découvrez les Résultats de Nos Utilisateurs
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {impactStats.map((stat, index) => (

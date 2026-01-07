@@ -13,92 +13,90 @@ interface Feature {
 const features: Feature[] = [
   {
     id: "scheduling",
-    title: "Smart Appointment Scheduling",
+    title: "Planification Intelligente des Rendez-vous",
     description:
-      "AI-optimized scheduling that reduces no-shows and maximizes your practice efficiency.",
+      "Une gestion des rendez-vous pensée pour les centres de kinésithérapie, qui réduit les absences et maximise votre taux d'occupation.",
     useCase:
-      "Dr. Amara reduced no-shows by 40% using automated SMS/WhatsApp reminders and intelligent waitlist management.",
+      "Un centre partenaire a réduit les rendez-vous manqués de 40 % grâce aux rappels automatiques et à la liste d'attente intelligente.",
     icon: <Icons.Calendar className="w-6 h-6" />,
     benefits: [
-      "Automated appointment reminders via SMS & WhatsApp",
-      "Smart waitlist fills cancelled slots instantly",
-      "Multi-provider calendar synchronization",
-      "Patient self-booking portal",
+      "Rappels automatiques par SMS & WhatsApp",
+      "Liste d'attente intelligente pour combler les créneaux annulés",
+      "Calendrier par kinésithérapeute, salle ou équipement",
+      "Prise de rendez-vous assistée",
     ],
   },
   {
     id: "records",
-    title: "Comprehensive Patient Records",
+    title: "Dossiers Patients Complets et Sécurisés",
     description:
-      "Centralized, secure patient files with instant access to complete medical history.",
+      "Toutes les informations du patient, centralisées et accessibles en quelques secondes.",
     useCase:
-      "The Wellness Clinic cut patient intake time by 65% with digital forms and automatic data population.",
+      "Les centres utilisant SMC ont réduit le temps administratif à l'accueil de 65 %.",
     icon: <Icons.Users className="w-6 h-6" />,
     benefits: [
-      "Complete medical history at your fingertips",
-      "Secure document and image storage",
-      "Customizable consultation templates",
-      "Real-time data synchronization",
+      "Historique médical et thérapeutique complet",
+      "Stockage sécurisé des documents et images (avant / après)",
+      "Modèles de fiches et comptes rendus personnalisables",
+      "Synchronisation en temps réel",
     ],
   },
   {
     id: "documentation",
-    title: "AI-Powered Documentation",
-    description:
-      "Voice-to-text notes and AI-assisted report writing that saves hours daily.",
+    title: "Suivi Thérapeutique Structuré",
+    description: "Un suivi clair et précis de l'évolution de chaque patient.",
     useCase:
-      "Dr. Chen now completes consultation notes in 30 seconds instead of 10 minutes using AI dictation.",
+      "Plans de traitement par séance avec objectifs thérapeutiques et suivi de progression.",
     icon: <Icons.FileText className="w-6 h-6" />,
     benefits: [
-      "Voice-to-text medical dictation",
-      "AI generates reports in one click",
-      "Smart prescription suggestions",
-      "Template library for all specialties",
+      "Plans de traitement par séance",
+      "Objectifs thérapeutiques et progression",
+      "Notes cliniques par kinésithérapeute",
+      "Comparaison visuelle avant / après",
     ],
   },
   {
     id: "billing",
-    title: "Simplified Billing & Payments",
-    description:
-      "Streamlined invoicing, insurance processing, and payment tracking.",
+    title: "Facturation & Gestion Financière Simplifiées",
+    description: "Une facturation fluide, conforme et sans erreurs.",
     useCase:
-      "Family Health Partners reduced billing cycle time by 60% and cut unpaid invoices by half.",
+      "Les centres équipés de SMC ont réduit leur cycle de facturation de 60 %.",
     icon: <Icons.CreditCard className="w-6 h-6" />,
     benefits: [
-      "Automated invoice generation",
-      "Insurance claim management",
-      "Multiple payment methods",
-      "Real-time financial dashboards",
+      "Génération automatique des factures",
+      "Gestion des paiements et des impayés",
+      "Tarifs par acte ou par séance",
+      "Tableaux de bord financiers en temps réel",
     ],
   },
   {
-    id: "teleconsult",
-    title: "Integrated Teleconsultation",
+    id: "team",
+    title: "Gestion d'Équipe et des Accès",
     description:
-      "HIPAA-compliant video consultations built right into your workflow.",
+      "Une collaboration fluide entre kinésithérapeutes, secrétaires et responsables.",
     useCase:
-      "Metro Dermatology expanded their reach by 300% offering video consultations to rural patients.",
-    icon: <Icons.Video className="w-6 h-6" />,
+      "Accès multi-utilisateurs avec rôles et permissions personnalisés.",
+    icon: <Icons.Users className="w-6 h-6" />,
     benefits: [
-      "One-click video consultations",
-      "Screen sharing for lab results",
-      "Secure messaging with patients",
-      "Virtual waiting room",
+      "Accès multi-utilisateurs avec rôles et permissions",
+      "Gestion des congés et absences",
+      "Planning du personnel",
+      "Centres multi-sites",
     ],
   },
   {
     id: "analytics",
-    title: "Practice Analytics Dashboard",
+    title: "Tableaux de Bord & Analytique",
     description:
-      "Actionable insights into your practice performance, patient trends, and revenue.",
+      "Pilotez votre centre avec des données claires et exploitables.",
     useCase:
-      "Sunrise Medical identified peak hours and optimized staffing, increasing daily patients by 25%.",
+      "Suivez le chiffre d'affaires, le taux d'occupation et la performance par praticien.",
     icon: <Icons.BarChart3 className="w-6 h-6" />,
     benefits: [
-      "Revenue and profitability tracking",
-      "Patient flow analytics",
-      "Staff productivity metrics",
-      "Custom report generation",
+      "Chiffre d'affaires et rentabilité",
+      "Taux d'occupation des kinésithérapeutes",
+      "Analyse des absences et annulations",
+      "Performance par praticien et par salle",
     ],
   },
 ];
@@ -113,15 +111,15 @@ export const Features = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-medium mb-4">
-            Powerful Features
+            Fonctionnalités Puissantes
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Everything You Need to{" "}
-            <span className="gradient-text">Run Your Practice</span>
+            Tout ce dont vous avez besoin pour{" "}
+            <span className="gradient-text">gérer votre centre</span>
           </h2>
           <p className="text-lg text-slate-600">
-            Real solutions for real challenges. See how each feature transforms
-            the way healthcare professionals work every day.
+            Des solutions réelles pour des défis réels. Découvrez comment chaque
+            fonctionnalité transforme votre quotidien.
           </p>
         </div>
 
@@ -177,12 +175,11 @@ export const Features = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Plus Many More Features
+                Et Bien Plus Encore
               </h3>
               <p className="text-slate-600 mb-6">
-                MediCarePro adapts to your specialty with customizable modules,
-                multi-location support, and integrations with labs, pharmacies,
-                and insurance providers.
+                Smart Medical Centers s'adapte à votre cabinet avec des modules personnalisables,
+                une gestion multi-sites et des intégrations avec vos partenaires.
               </p>
               <div className="flex flex-wrap gap-3">
                 {[
@@ -202,6 +199,7 @@ export const Features = () => {
                 ))}
               </div>
             </div>
+            {/* HIDDEN - Pricing CTA
             <div className="flex justify-center">
               <a
                 href="#pricing"
@@ -212,6 +210,7 @@ export const Features = () => {
                 <Icons.ArrowRight className="w-5 h-5" />
               </a>
             </div>
+            */}
           </div>
         </div>
       </div>
