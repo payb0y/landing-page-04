@@ -174,12 +174,11 @@ export const Features = () => {
         <div className="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-slate-100">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Et Bien Plus Encore
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">Et Bien Plus Encore</h3>
               <p className="text-slate-600 mb-6">
-                Smart Medical Centers s'adapte à votre cabinet avec des modules personnalisables,
-                une gestion multi-sites et des intégrations avec vos partenaires.
+                Smart Medical Centers s'adapte à votre cabinet avec des modules
+                personnalisables, une gestion multi-sites et des intégrations
+                avec vos partenaires.
               </p>
               <div className="flex flex-wrap gap-3">
                 {[

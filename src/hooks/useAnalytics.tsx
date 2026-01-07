@@ -124,7 +124,9 @@ export const getCTAText = (section: string): { text: string; href: string } => {
     faq: { text: "Commencer Maintenant", href: "#contact" },
     pricing: { text: "Contacter le Service Commercial", href: "#contact" },
   };
-  return ctaMap[section] || { text: "Commencer l'Essai Gratuit", href: "#contact" };
+  return (
+    ctaMap[section] || { text: "Commencer l'Essai Gratuit", href: "#contact" }
+  );
 };
 
 // Intersection observer hook for animations
