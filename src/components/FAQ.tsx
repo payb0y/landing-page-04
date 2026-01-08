@@ -22,7 +22,7 @@ const faqItems: FAQItem[] = [
     id: "2",
     question: "Mes données patients sont-elles sécurisées et conformes ?",
     answer:
-      "Absolument. La sécurité est notre priorité. SMC est conforme RGPD et certifié. Nous utilisons un chiffrement de niveau bancaire (AES-256) pour toutes les données. Nos serveurs sont hébergés dans des centres de données certifiés avec surveillance 24/7, sauvegardes automatiques et protocoles de récupération.",
+      "Absolument. La sécurité est notre priorité. SMC est conforme RGPD. Nous utilisons un chiffrement de niveau bancaire (AES-256) pour toutes les données. Nos serveurs sont hébergés dans des centres de données certifiés avec surveillance 24/7, sauvegardes automatiques et protocoles de récupération.",
     category: "Sécurité",
   },
   {

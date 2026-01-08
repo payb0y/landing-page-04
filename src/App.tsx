@@ -5,7 +5,7 @@ import { Hero } from "./components/Hero";
 import { CustomerJourney } from "./components/CustomerJourney";
 import { Features } from "./components/Features";
 import { UIPreviews } from "./components/UIPreviews";
-import { Testimonials } from "./components/Testimonials";
+import { VideoSection } from "./components/VideoSection";
 import { FAQ } from "./components/FAQ";
 import { FinalCTA } from "./components/FinalCTA";
 
@@ -19,7 +19,8 @@ function App() {
           <CustomerJourney />
           <Features />
           <UIPreviews />
-          <Testimonials />
+          <VideoSection />
+          {/* <Testimonials /> */}
           <FAQ />
           {/* <Pricing /> */}
           <FinalCTA />
