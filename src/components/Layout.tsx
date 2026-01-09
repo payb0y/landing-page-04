@@ -160,34 +160,34 @@ export const StickyCTA = () => {
 };
 
 export const Footer = () => {
-  const { trackEvent } = useAnalytics();
+  // const { trackEvent } = useAnalytics();
 
-  const footerLinks = {
-    product: [
-      { label: "Fonctionnalités", href: "#features" },
-      { label: "Tarifs", href: "#pricing" },
-      { label: "Intégrations", href: "#" },
-      { label: "Mises à jour", href: "#" },
-    ],
-    company: [
-      { label: "À propos", href: "#" },
-      { label: "Carrières", href: "#" },
-      { label: "Presse", href: "#" },
-      { label: "Blog", href: "#" },
-    ],
-    support: [
-      { label: "Centre d'aide", href: "#" },
-      { label: "Documentation", href: "#" },
-      { label: "Formation", href: "#" },
-      { label: "Contact", href: "#contact" },
-    ],
-    legal: [
-      { label: "Confidentialité", href: "#" },
-      { label: "Conditions", href: "#" },
-      { label: "Conformité RGPD", href: "#" },
-      { label: "Sécurité des données", href: "#" },
-    ],
-  };
+  // const footerLinks = {
+  //   product: [
+  //     { label: "Fonctionnalités", href: "#features" },
+  //     { label: "Tarifs", href: "#pricing" },
+  //     { label: "Intégrations", href: "#" },
+  //     { label: "Mises à jour", href: "#" },
+  //   ],
+  //   company: [
+  //     { label: "À propos", href: "#" },
+  //     { label: "Carrières", href: "#" },
+  //     { label: "Presse", href: "#" },
+  //     { label: "Blog", href: "#" },
+  //   ],
+  //   support: [
+  //     { label: "Centre d'aide", href: "#" },
+  //     { label: "Documentation", href: "#" },
+  //     { label: "Formation", href: "#" },
+  //     { label: "Contact", href: "#contact" },
+  //   ],
+  //   legal: [
+  //     { label: "Confidentialité", href: "#" },
+  //     { label: "Conditions", href: "#" },
+  //     { label: "Conformité RGPD", href: "#" },
+  //     { label: "Sécurité des données", href: "#" },
+  //   ],
+  // };
 
   return (
     <footer className="bg-slate-900 text-white">
